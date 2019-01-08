@@ -1,9 +1,45 @@
 body {
-    background-color: #dadada
+    background-color: #8B8989;
 }
 
-a {
+.middle {
     font-size: 24px;
-    margin-left: 47.5%;
-    text-align: justify
+    display: block;
+    margin: 0 auto;
+}
+
+.bg {
+    background-color: purple;
+}
+
+.fake-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: solid 1px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+/*CUSTOM ICONS*/
+
+.nav-map {
+    width: 30px;
+    margin-bottom: -5px;
+}
+
+.nav-friends {
+    width: 60px;
+}
+
+.nav-logout {
+    width: 55px;
+}
+
+.logo {
+    width: 140px;
+    
 }
