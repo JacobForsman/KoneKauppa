@@ -1,15 +1,45 @@
 body {
-    background-color: #8B8989; 
+    background-image: url(https://pbs.twimg.com/media/DwdjztgW0AEI01E.jpg:large
+    )
 }
 
 .middle {
-    font-size: 24px;
     display: block;
-    margin: 0 auto;
+    margin-left: 37.5%;
+    font-size: 24px;
 }
 
-.bg {
+.middle2 {
+    margin-left: 41%;
+    font-size: 24px;
+}
+
+.middle3 {
+    margin-left: 35.5%;
+    font-size: 24px;
+}
+
+.middle4 {
+    margin-left: 27.5%;
+    font-size: 20px;
+}
+
+#log-in-btn {
+    margin-right: 30px;
+}
+
+.navbar {
+    background-color: purple !important;
+}
+
+.text-dark {
+    color: #e0e0e0!important;
+}
+
+.btn-primary {
     background-color: purple;
+    border: none;
+    color: #e0e0e0
 }
 
 .fake-link:hover {
@@ -17,11 +47,31 @@ body {
     cursor: pointer;
 }
 
+#margin {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#sign-up {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
 li {
     list-style-type: none;
-    border-bottom: solid 1px;
+    border-bottom: solid 2px;
+    font-size: 20px;
+    border-color: #e0e0e0;
+    color: #e0e0e0;
     margin-top: 10px;
     margin-right: 50px;
+}
+
+p {
+    font-size: 20;
+    color: #e0e0e0;
 }
 
 /*CUSTOM ICONS*/
@@ -41,5 +91,9 @@ li {
 
 .logo {
     width: 140px;
-    
+
+}
+
+#friends {
+    width: 170px;
 }
