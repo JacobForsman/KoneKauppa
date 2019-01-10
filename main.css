@@ -1,6 +1,6 @@
 body {
     background-image: url(https://pbs.twimg.com/media/DwdjztgW0AEI01E.jpg:large
-    )
+)
 }
 
 .middle {
@@ -30,10 +30,14 @@ body {
 
 .navbar {
     background-color: purple !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .text-dark {
     color: #e0e0e0!important;
+    z-index: 1;
 }
 
 .btn-primary {
@@ -74,6 +78,10 @@ p {
     color: #e0e0e0;
 }
 
+#home {
+margin-top: 30%;  
+}
+
 /*CUSTOM ICONS*/
 
 .nav-map {
@@ -96,4 +104,5 @@ p {
 
 #friends {
     width: 170px;
+    margin-top: 30%;
 }
