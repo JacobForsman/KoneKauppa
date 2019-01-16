@@ -1,121 +1,91 @@
-body {
-    background-image: url(https://pbs.twimg.com/media/DwdjztgW0AEI01E.jpg:large
-)
+body,
+html {
+    height: 100%
 }
 
-.middle {
-    display: block;
-    margin-left: 37.5%;
-    font-size: 24px;
+#nav-text {
+    float: left;
 }
 
-.middle2 {
-    margin-left: 41%;
-    font-size: 24px;
-}
-
-.middle3 {
-    margin-left: 35.5%;
-    font-size: 24px;
-}
-
-.middle4 {
-    margin-left: 27.5%;
-    font-size: 20px;
-}
-
-#log-in-btn {
-    margin-right: 30px;
-}
-
-.navbar {
-    background-color: purple !important;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-.text-dark {
-    color: #e0e0e0!important;
-    z-index: 1;
-}
-
-.btn-primary {
-    background-color: purple;
-    border: none;
-    color: #e0e0e0
-}
-
-.fake-link:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#margin {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-}
-
-#sign-up {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-}
-
-li {
-    list-style-type: none;
-    border-bottom: solid 2px;
-    font-size: 20px;
-    border-color: #e0e0e0;
-    color: #e0e0e0;
-    margin-top: 10px;
-    margin-right: 50px;
-}
-
-p {
-    font-size: 20;
-    color: #e0e0e0;
-}
-
-#home {
-margin-top: 30%;  
-}
-
-/*CUSTOM ICONS*/
-
-.nav-map {
-    width: 30px;
-    margin-bottom: -5px;
-}
-
-.nav-friends {
-    width: 60px;
-}
-
-.nav-logout {
-    width: 55px;
-}
-
-.logo {
-    width: 140px;
-
-}
-
-#friends {
+#logo {
     width: 170px;
-    margin-top: 30%;
+    height: 60px;
+}
+
+#search {
+    position: absolute;
+    right: 50px;
+    border: none;
+}
+
+#searchbox {
+    position: absolute;
+    right: 20px;
+    border: none;
+}
+
+.dropdown {
+    display: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+/*MEDIA*/
+
+@media only screen and (max-width: 775px) {
+    .nav-item {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .dropdown {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #search {
+        display: none;
+    }
+
+    #searchbox {
+        display: none;
+    }
 }
 
 /*SHAPES*/
 
-#circle {
-    width: 100px;
-    height: 100px;
-    border: solid  black;
-    background: rgb(255, 255, 255, 0.5);
-    border-radius: 50%;
+.background {
+    width: 300px;
+    height: 100vh;
+    background-color: #eeeeee;
+    z-index: -1;
     position: absolute;
-    top: 600px;
-    left: 20px;
-  }
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    .block {
+        width: 300px;
+        height: 800px;
+        transform: rotate(35deg);
+        position: fixed;
+        bottom: -300px;
+        right: -45px;
+        z-index: -1;
+    }
+
+    .block2 {
+        width: 300px;
+        height: 825px;
+        transform: rotate(60deg);
+        position: fixed;
+        bottom: -425px;
+        right: 250px;
+        z-index: -1;
+    }

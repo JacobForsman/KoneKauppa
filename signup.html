@@ -5,33 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GangGang</title>
+    <title>KoneKauppa</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-primary justify-content-between">
+        <form id="nav-text" class="form-inline">
+            <a href="home.html"><img id="logo" class="mb-2" src="https://pbs.twimg.com/media/DxBTW6CX0AAidfu.jpg:large"
+                    alt=""></a>
+            <div class="dropdown">
+                <button class="btn bg-white text-muted dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="home.html">Home</a>
+                    <a class="dropdown-item" href="signup.html">Sign up</a>
+                    <a class="dropdown-item" href="#">Pricing</a>
+                </div>
+            </div>
+            <a class="nav-item nav-link text-light ml-1 h5 my-1" id="nav-text" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link text-light ml-1 h5 my-1" id="nav-text" href="signup.html">Sign up</a>
+            <a class="nav-item nav-link text-light ml-1 h5 my-1" id="nav-text" href="#">Pricing</a>
+            <input id="search" class="form-control mr-5 sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchbox" class="btn btn-outline-success bg-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
 
-    <img class="mt-5 mb-5 d-block mx-auto" src="https://pbs.twimg.com/media/DwdO762XcAA-JeB.png:large" alt="">
+    <h1 class="text-center my-5">Sign up</h1>
+    <input type="text" class="border bg-primary text-danger d-block text-center mx-auto rounded mb-1" placeholder="username">
+    <input type="password" class="border bg-primary text-white d-block text-center mx-auto rounded" placeholder="password">
+    <input type="password" class="border bg-primary text-white d-block text-center mx-auto rounded" placeholder="password">
+    <div class="block bg-primary"></div>
+    <div class="block2 bg-primary"></div>
 
-    <input type="text" class="border border-primary mx-auto d-block text-center mb-1 rounded" placeholder="username">
-    <input type="password" class="border border-primary mx-auto d-block text-center mb-1 rounded" placeholder="password">
-    <input type="password" class="border border-primary mx-auto d-block text-center rounded" placeholder="verify password">
-
-
-    <a href="home.html">
-        <button id="log-in-btn" type="button" class="btn btn-primary middle3 mt-5">Sign up</button>
-    </a>
-    <br><br>
-    <a id="margin" class="text-dark text-center" href="forgot.html">
-        Forgot password?
-    </a>
-    <br>
-    <a id="sign-up" class="text-dark text-center " href="login.html">
-        Create account
-    </a>
-
+    <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
