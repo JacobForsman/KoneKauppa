@@ -32,15 +32,48 @@ html {
     color: white;
 }
 
+#sign-in {
+    font-family: 'Staatliches', cursive;
+}
+
+.background {
+    width: 1700px;
+   height: 192.5vh;
+   background-color: #eeeeee;
+   z-index: -1;
+   position: absolute;
+    left: 5%;
+}
+
 /*MEDIA*/
+
+@media only screen and (max-width: 1024px) {
+    .background {
+        width: 800px;
+        height: 194.5vh;
+        background-color: #eeeeee;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }   
+}
 
 @media only screen and (max-width: 775px) {
     .nav-item {
         display: none;
     }
-}
-
-@media only screen and (max-width: 775px) {
+    .background {
+        width: 600px;
+        height: 193.5vh;
+        background-color: #eeeeee;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
     .dropdown {
         display: block;
     }
@@ -54,22 +87,21 @@ html {
     #searchbox {
         display: none;
     }
+    .background {
+        width: 300px;
+        height: 100vh;
+        background-color: #eeeeee;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 }
 
 /*SHAPES*/
 
-.background {
-    width: 300px;
-    height: 100vh;
-    background-color: #eeeeee;
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
+
 
     .block {
         width: 300px;
