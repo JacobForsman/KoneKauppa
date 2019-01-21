@@ -32,48 +32,27 @@ html {
     color: white;
 }
 
-#sign-in {
-    font-family: 'Staatliches', cursive;
+#font {
+    font-family: 'Staatliches', arial;
 }
 
-.background {
-    width: 1700px;
-   height: 192.5vh;
-   background-color: #eeeeee;
-   z-index: -1;
-   position: absolute;
-    left: 5%;
+h1 {
+    padding-top: 75px;
+}
+
+.navbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
 }
 
 /*MEDIA*/
-
-@media only screen and (max-width: 1024px) {
-    .background {
-        width: 800px;
-        height: 194.5vh;
-        background-color: #eeeeee;
-        z-index: -1;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }   
-}
 
 @media only screen and (max-width: 775px) {
     .nav-item {
         display: none;
     }
-    .background {
-        width: 600px;
-        height: 193.5vh;
-        background-color: #eeeeee;
-        z-index: -1;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
+
     .dropdown {
         display: block;
     }
@@ -87,38 +66,75 @@ html {
     #searchbox {
         display: none;
     }
-    .background {
-        width: 300px;
-        height: 100vh;
-        background-color: #eeeeee;
-        z-index: -1;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        margin-bottom: 20px;
     }
 }
 
 /*SHAPES*/
 
+.block {
+    width: 300px;
+    height: 800px;
+    transform: rotate(35deg);
+    position: fixed;
+    bottom: -300px;
+    right: -45px;
+    z-index: -1;
+}
 
+.block2 {
+    width: 300px;
+    height: 825px;
+    transform: rotate(60deg);
+    position: fixed;
+    bottom: -425px;
+    right: 250px;
+    z-index: -1;
+}
 
-    .block {
-        width: 300px;
-        height: 800px;
-        transform: rotate(35deg);
-        position: fixed;
-        bottom: -300px;
-        right: -45px;
-        z-index: -1;
-    }
+/*GALLERY LISTINGS*/
 
-    .block2 {
-        width: 300px;
-        height: 825px;
-        transform: rotate(60deg);
-        position: fixed;
-        bottom: -425px;
-        right: 250px;
-        z-index: -1;
-    }
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.gallery {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    width: 180px;
+    box-shadow: -6px 6px 14px -1px rgba(0, 0, 0, 0.29);
+    transition: 0.3s;
+}
+
+.gallery:hover {
+    box-shadow: -7px 8px 11px -1px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/*CREATE LISTING*/
+
+.form-group {
+    margin-right: 20px;
+    margin-left: 20px;
+}
