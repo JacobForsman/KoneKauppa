@@ -36,6 +36,11 @@ html {
     font-family: 'Staatliches', arial;
 }
 
+#font2 {
+    font-family: "calibri",;
+    font-weight: bold;
+}
+
 h1 {
     padding-top: 75px;
 }
