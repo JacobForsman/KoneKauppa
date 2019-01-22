@@ -148,10 +148,10 @@ label {
 
 .block3 {
     width: 300px;
-    height: 800px;
+    height: 300px;
     transform: rotate(60deg);
     position: fixed;
-    bottom: -400px;
-    right: 100px;
+    bottom: -225px;
+    right: -100px;
     z-index: -1;
 }
