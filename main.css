@@ -12,6 +12,12 @@ html {
     height: 60px;
 }
 
+#logo2 {
+    display: none;
+    width: 50px;
+    height: 60px;
+}
+
 #search {
     position: absolute;
     right: 50px;
@@ -49,6 +55,7 @@ h1 {
     top: 0;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 a {
@@ -62,12 +69,33 @@ a:hover {
 
 /*MEDIA*/
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 910px) {
+    #logo {
+        display: none;
+    }
+
+    #logo2 {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .nav-item {
+        margin-right: -25px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 740px) {
     .nav-item {
         display: none;
     }
 
     .dropdown {
+        margin-left: 40px;
         display: block;
     }
 }
@@ -90,6 +118,13 @@ a:hover {
         margin-bottom: 20px;
     }
 }
+
+@media only screen and (max-width: 490px) {
+    .listing-br {
+        display: blocK;
+    }
+}
+
 
 /*GALLERY LISTINGS*/
 
@@ -165,4 +200,19 @@ label {
     bottom: -225px;
     right: -100px;
     z-index: -1;
+}
+
+/*LISTINGS*/
+
+.margin-left {
+    position: absolute;
+}
+
+.listing-space {
+    margin-top: 300px;
+}
+
+.listing-info {
+    margin-left: 225px;
+    margin-bottom: 100px;
 }
