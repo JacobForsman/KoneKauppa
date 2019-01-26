@@ -84,12 +84,7 @@ a:hover {
         margin-right: -25px;
     }
 
-    .dropdown {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 850px) {
     .nav-item {
         display: none;
     }
@@ -97,16 +92,6 @@ a:hover {
     .dropdown {
         margin-left: 40px;
         display: block;
-    }
-}
-
-@media only screen and (max-width: 580px) {
-    #search {
-        display: none;
-    }
-
-    #searchbox {
-        display: none;
     }
 
     .image-gallery {
@@ -116,6 +101,17 @@ a:hover {
 
     .gallery {
         margin-bottom: 20px;
+    }
+}
+}
+
+@media only screen and (max-width: 580px) {
+    #search {
+        display: none;
+    }
+
+    #searchbox {
+        display: none;
     }
 }
 
@@ -129,6 +125,7 @@ a:hover {
     .block {
         display: none;
     }
+
     .block2 {
         display: none;
     }
@@ -158,13 +155,8 @@ a:hover {
     transition: 0.3s;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
 .desc {
-    padding: 15px;
+    padding-top: 15px;
     text-align: center;
 }
 
