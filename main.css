@@ -176,6 +176,9 @@ a:hover {
     .listing-br {
         display: blocK;
     }
+    .block3 {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
