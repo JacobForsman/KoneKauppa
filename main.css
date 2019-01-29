@@ -67,6 +67,33 @@ a:hover {
     color: black;
 }
 
+#image2 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15%;
+    width: 650px;
+}
+
+#carousel-img {
+    width: 850px;
+    justify-items: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+}
+
+#price {
+    margin-left: 22%;
+}
+
+#div-bg {
+    
+}
+
 /*MEDIA*/
 
 @media only screen and (max-width: 910px) {
