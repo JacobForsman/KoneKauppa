@@ -76,22 +76,34 @@ a:hover {
 }
 
 #carousel-img {
-    width: 850px;
+    width: 100%;
+    max-width: 750px;
     justify-items: center;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 100px;
 }
 
-#carouselExampleIndicators {
-    width: 100%;
+.icon {
+    position: relative;
+    top: 4px;
 }
 
 #price {
-    margin-left: 22%;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
 }
 
-#div-bg {
-    
+.div-bg {
+    background-color: #ececec;
+    position: relative;
+    top: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.phone-2 {
+    display: none;
 }
 
 /*MEDIA*/
@@ -111,25 +123,35 @@ a:hover {
         margin-right: -25px;
     }
 
-@media only screen and (max-width: 850px) {
-    .nav-item {
+    @media only screen and (max-width: 850px) {
+        .nav-item {
+            display: none;
+        }
+
+        .dropdown {
+            margin-left: 40px;
+            display: block;
+        }
+
+        .image-gallery {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+     .phone-1 {
         display: none;
     }
 
-    .dropdown {
-        margin-left: 40px;
-        display: block;
+    .phone-2 {
+        display: flex;
     }
-
-    .image-gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .gallery {
-        margin-bottom: 20px;
-    }
-}
 }
 
 @media only screen and (max-width: 580px) {
@@ -139,6 +161,14 @@ a:hover {
 
     #searchbox {
         display: none;
+    }
+
+    .phone-1 {
+        display: none;
+    }
+
+    .phone-2 {
+        display: flex;
     }
 }
 
