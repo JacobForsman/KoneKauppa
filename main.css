@@ -106,7 +106,7 @@ a:hover {
     display: none;
 }
 
-/*MEDIA*/
+/*-------------MEDIA--------------*/
 
 @media only screen and (max-width: 910px) {
     #logo {
@@ -176,12 +176,9 @@ a:hover {
     .listing-br {
         display: blocK;
     }
-    .block3 {
-        display: none;
-    }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1124px) {
     .block {
         display: none;
     }
@@ -189,10 +186,13 @@ a:hover {
     .block2 {
         display: none;
     }
+    .block3 {
+        display: none;
+    }
 }
 
 
-/*GALLERY LISTINGS*/
+/*----------GALLERY LISTINGS------------------*/
 
 .image-gallery {
     display: flex;
@@ -224,14 +224,14 @@ label {
     font-size: 18px;
 }
 
-/*CREATE LISTING*/
+/*---------------CREATE LISTING---------------*/
 
 .form-group {
     margin-right: 20px;
     margin-left: 20px;
 }
 
-/*SHAPES*/
+/*-----------------------SHAPES----------------*/
 
 .block {
     width: 300px;
@@ -239,7 +239,7 @@ label {
     transform: rotate(35deg);
     position: fixed;
     bottom: -300px;
-    right: -45px;
+    right: -58px;
     z-index: -1;
 }
 
@@ -263,7 +263,7 @@ label {
     z-index: -1;
 }
 
-/*LISTINGS*/
+/*----------------------LISTINGS---------------------*/
 
 .margin-left {
     position: absolute;
